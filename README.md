@@ -6,11 +6,9 @@ The file should contain 3 variables :
 ```
 DISCORD_TOKEN="yourPrivateDiscordToken"
 CLIENT_ID="yourPrivateApplicationId"
-GUILD_ID="yourPrivateGuildID"
 ```
 
-In Discord, you'll find your guild id this way : Enable developer mode > Right-click the server title > "Copy ID"
-For your other IDs, go to : https://discord.com/developers/applications
+For your IDs, go to : https://discord.com/developers/applications
 In your App, under "General Information" you can find your "Application ID". This number goes with CLIENT_ID in the .env file.
 In your App, under "Bot", you can find your Token. Click Reset Token to generate one. There is no way to see a previously issued token.
 
