@@ -42,9 +42,6 @@ docker run -d --name seat-bot seat-bot
 
 # Adding a bot to a guild (server)
 
-To add a bot to a guild, click the link :
-https://discord.com/oauth2/authorize?client_id=1235670437749588009&permissions=0&scope=bot+applications.commands
-
 To register bot commands to a guild, run :
 
 ```
