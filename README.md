@@ -1,3 +1,19 @@
+# .env
+
+In order for the bot to run, you have to create a .env file at the root of the repository.
+The file should contain 3 variables :
+
+```
+DISCORD_TOKEN="yourPrivateDiscordToken"
+CLIENT_ID="yourPrivateApplicationId"
+GUILD_ID="yourPrivateGuildID"
+```
+
+In Discord, you'll find your guild id this way : Enable developer mode > Right-click the server title > "Copy ID"
+For your other IDs, go to : https://discord.com/developers/applications
+In your App, under "General Information" you can find your "Application ID". This number goes with CLIENT_ID in the .env file.
+In your App, under "Bot", you can find your Token. Click Reset Token to generate one. There is no way to see a previously issued token.
+
 # Running in node
 
 ```
@@ -29,15 +45,7 @@ docker run -d --name seat-bot seat-bot
 To add a bot to a guild, click the link :
 https://discord.com/oauth2/authorize?client_id=1235670437749588009&permissions=0&scope=bot+applications.commands
 
-To register bot commands to a guild :
-First, enter your guild ID in the .env file
-
-```
-GUILD_ID="yourGuildId"
-```
-
-in Discord, you'll find your guild id this way : Enable developer mode > Right-click the server title > "Copy ID"
-Once that is done, run:
+To register bot commands to a guild, run :
 
 ```
 npm deploy-commands.js
