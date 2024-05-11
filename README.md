@@ -2,16 +2,25 @@
 
 ```
 node .
+```
+
 OR
+
+```
 node index.js
 ```
 
 # Building Docker
 
-Build and run:
+Build:
 
 ```
 docker build -t seat-bot .
+```
+
+Run:
+
+```
 docker run -d --name seat-bot seat-bot
 ```
 
@@ -22,8 +31,13 @@ https://discord.com/oauth2/authorize?client_id=1235670437749588009&permissions=0
 
 To register bot commands to a guild :
 First, enter your guild ID in the .env file
-guildId: Your server's id (in Discord, Enable developer mode > Right-click the server title > "Copy ID")
-Then run
+
+```
+GUILD_ID="yourGuildId"
+```
+
+in Discord, you'll find your guild id this way : Enable developer mode > Right-click the server title > "Copy ID"
+Once that is done, run:
 
 ```
 npm deploy-commands.js
